@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-const Color _customColor = Color.fromARGB(255, 0, 255, 51);
+const Color _customColor = Color.fromARGB(255, 0, 0, 255);
 const List<Color> _colorThemes = [
   _customColor,
   Colors.red,
-  Colors.blue,
+  Colors.lightBlue,
   Colors.yellow,
   Colors.purple,
   Colors.orange,
@@ -21,6 +21,8 @@ class AppTheme {
 
   ThemeData theme() {
     return ThemeData(
-        useMaterial3: true, colorSchemeSeed: _colorThemes[selectedColor]);
+        useMaterial3: true,
+        colorSchemeSeed: _colorThemes[selectedColor],
+        brightness: Brightness.dark);
   }
 }
