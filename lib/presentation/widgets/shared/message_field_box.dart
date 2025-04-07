@@ -22,9 +22,11 @@ class MessageFieldBox extends StatelessWidget {
         onPressed: () {
           final textValue = textController.value.text;
           print('button: $textValue');
+          textController.clear();
         },
       ),
     );
+
     return TextFormField(
       onTapOutside: (event) {
         focusNode.unfocus();
