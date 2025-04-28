@@ -1,4 +1,4 @@
-enum FromWho { me, him }
+enum FromWho { me, hers }
 
 //Identidad atómica: la unidad más pequeña
 class Message {
