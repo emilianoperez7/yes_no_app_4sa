@@ -25,7 +25,7 @@ class HerMessageBubble extends StatelessWidget {
         _ImageBubble(),
 
         SizedBox(
-          height: 10,
+          height: 5,
         )
 
         //Todo: imagen
